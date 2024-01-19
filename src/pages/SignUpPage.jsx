@@ -1,3 +1,4 @@
+import PageFooter from "../footer/PageFooter";
 import NavBar from "../navbar/NavBar";
 
 export default function SignUpPage() {
@@ -197,6 +198,7 @@ export default function SignUpPage() {
           </form>
         </div>
       </section>
+      <PageFooter/>
     </>
   );
 }

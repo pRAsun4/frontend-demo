@@ -1,9 +1,10 @@
+import PageFooter from "../footer/PageFooter";
 import NavBar from "../navbar/NavBar";
 
 export default function LoginPage() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <section className="login-form-section px-[1.25rem] py-[2rem] flex justify-center items-center">
         <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
           <form className="space-y-6" action="#">
@@ -85,6 +86,7 @@ export default function LoginPage() {
           </form>
         </div>
       </section>
+      {/* <PageFooter /> */}
     </>
   );
 }

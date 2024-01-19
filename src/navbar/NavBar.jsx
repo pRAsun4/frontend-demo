@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../navbar/NavBar-style.css";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -16,12 +17,12 @@ export default function NavBar() {
     <>
       <nav className="w-full h-auto border">
         <div className="w-full flex justify-between md:px-[2rem] px-[1.5rem] py-[1.25rem] relative">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="name-box px-[29px] py-[3px] bg-[#d4161e] h-auto items-center justify-center lg:flex hidden"
           >
             <h1 className="text-[1rem] sm:text-[2rem]">T-SOUL</h1>
-          </a>
+          </Link>
           <button
             type="button"
             onClick={handleOpen}
@@ -107,7 +108,7 @@ export default function NavBar() {
                 />
               </svg>
             </a>
-            <a href="#" className="flex justify-center item-center  px-2 py-3">
+            <Link to='/login' className="flex justify-center item-center  px-2 py-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -123,7 +124,7 @@ export default function NavBar() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
