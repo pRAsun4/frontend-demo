@@ -1,0 +1,8 @@
+footer {
+  background: rgb(4, 11, 83);
+  background: linear-gradient(
+    124deg,
+    rgba(4, 11, 83, 1) 0%,
+    rgba(60, 7, 69, 1) 0%
+  );
+}
