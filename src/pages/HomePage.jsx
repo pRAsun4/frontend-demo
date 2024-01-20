@@ -1,4 +1,4 @@
-import dropCutImg from '../image/dropCut.png';
+import dropCutImg from '../image/dropcut.png';
 import fullSleev from '../image/full-sleev.png'
 import narutoImg from '../image/naruto.png'
 import womenTshirt from '../image/women.png'
