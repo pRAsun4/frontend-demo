@@ -1,6 +1,4 @@
-import { Carousel } from "flowbite-react";
-import React from "react";
-import dropCut from '../image/dropCut.png';
+import dropCutImg from '../image/dropCut.png';
 import fullSleev from '../image/full-sleev.png'
 import narutoImg from '../image/naruto.png'
 import womenTshirt from '../image/women.png'
@@ -45,7 +43,7 @@ const HomePage = () => {
         }}
       >
         <SwiperSlide>
-          <img src={dropCut} />
+          <img src={dropCutImg} />
         </SwiperSlide>
         <SwiperSlide>
           <img src={fullSleev} />
