@@ -1,15 +1,14 @@
-import PageFooter from "../footer/PageFooter";
-import NavBar from "../navbar/NavBar";
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
   return (
     <>
-      {/* <NavBar /> */}
+      
       <section className="login-form-section px-[1.25rem] py-[2rem] flex justify-center items-center">
         <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
           <form className="space-y-6" action="#">
             <h5 className="text-xl font-medium text-gray-900 dark:text-white">
-              Sign in to our platform
+              Login to our platform
             </h5>
             <div>
               <label
@@ -76,17 +75,17 @@ export default function LoginPage() {
             </button>
             <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
               Not registered?{" "}
-              <a
-                href="#"
+              <Link
+                to='/signup'
                 className="text-blue-700 hover:underline dark:text-blue-500"
               >
                 Create account
-              </a>
+              </Link>
             </div>
           </form>
         </div>
       </section>
-      {/* <PageFooter /> */}
+      
     </>
   );
 }

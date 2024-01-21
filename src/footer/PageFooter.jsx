@@ -27,7 +27,7 @@ export default function PageFooter() {
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
-                      href="https://github.com/themesberg/flowbite"
+                      href="https://github.com/pRAsun4/frontend-demo-t-soul"
                       className="hover:underline "
                     >
                       Github
@@ -66,9 +66,9 @@ export default function PageFooter() {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 2023{" "}
-              <a href="https://flowbite.com/" className="hover:underline">
-                Flowbite™
+              © 2024{" "}
+              <a href="#" className="hover:underline">
+                T-Soul
               </a>
               . All Rights Reserved.
             </span>
@@ -127,7 +127,7 @@ export default function PageFooter() {
                 <span className="sr-only">Twitter page</span>
               </a>
               <a
-                href="#"
+                href="https://github.com/pRAsun4/frontend-demo-t-soul"
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
               >
                 <svg
