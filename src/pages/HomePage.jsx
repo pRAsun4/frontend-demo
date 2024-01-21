@@ -23,13 +23,13 @@ const HomePage = () => {
         spaceBetween={50}
         slidesPerView={1}
         navigation
-        Autoplay
-        loop={true}
+        // Autoplay
+        // loop={true}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -43,16 +43,16 @@ const HomePage = () => {
         }}
       >
         <SwiperSlide>
-          <img src={dropCutImg} />
+          <img src={dropCutImg} className='w-full h-full' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={fullSleev} />
+          <img src={fullSleev} className='w-full h-full' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={narutoImg} />
+          <img src={narutoImg} className='w-full h-full' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={womenTshirt} />
+          <img src={womenTshirt} className='w-full h-full' />
         </SwiperSlide>
       </Swiper>
      
