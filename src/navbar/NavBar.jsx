@@ -7,6 +7,7 @@ export default function NavBar() {
 
   const handleOpen = () => {
     setOpen(true);
+    console.log(open);
   };
   const handleClosed = () => {
     setOpen(false);
