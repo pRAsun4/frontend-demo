@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 
 // Import Swiper styles
 import "swiper/css";
+import ChooseUs from '../sections/ChooseUs';
 
 const HomePage = () => {
   return (
@@ -55,7 +56,7 @@ const HomePage = () => {
           <img src={womenTshirt} className='w-full h-[20dvh] sm:h-auto' />
         </SwiperSlide>
       </Swiper>
-      
+      <ChooseUs/>
      
     </>
   );
