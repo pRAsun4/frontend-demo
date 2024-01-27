@@ -1,0 +1,57 @@
+.border1 {
+  border: 1px solid red;
+}
+.why-choose-us-section h2 {
+  transition-delay: 0.2s;
+  transition: opacity 0.4s ease;
+  transition-property: opacity, transform;
+  font-weight: 600;
+  line-height: 1.125;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+.points-cards .cards-content h3 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  font-style: normal;
+}
+.points-cards .cards-content p {
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: Montserrat, sans-serif;
+}
+.points-cards .icon svg {
+  width: 3rem;
+  height: 2.5rem;
+}
+.points-cards .icon svg path {
+  fill: red;
+}
+
+.catagory-section .catagory-header h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  font-style: normal;
+}
+
+.category-hover {
+  height: 18%;
+  transition: height 0.5s ease-in-out, background-color 0.5s ease-in-out,
+    align-items 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.category-box:hover .category-hover {
+  transition: 0.4s ease-in-out;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(60, 7, 69, 0.6) !important;
+}
+.category-hover h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  font-style: normal;
+}
