@@ -4,8 +4,16 @@ import narutoImg from "../image/naruto.png";
 import womenTshirt from "../image/women.png";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import menCatagory from '../image/men-catagory.png'
-import womenCatagory from '../image/man-cat.png'
+import menCatagory from "../image/men-catagory.png";
+import womenCatagory from "../image/man-cat.png";
+import anime from '../image/anime.png'
+import cartoon from '../image/cartoon.png'
+import funkey from '../image/funkey.png'
+import funny from '../image/funny.png'
+import geek from '../image/geek.png'
+import glow from '../image/glow.png'
+import slogan from '../image/slogan.png'
+import superHero from '../image/super-hero.png'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,9 +22,10 @@ import "swiper/css/pagination";
 import "./CSS/chooseUs.css";
 // Import Swiper styles
 import "swiper/css";
+import ProductList from "../product-list/ProductList";
 
 const HomePage = () => {
-  return (
+  return ( 
     <>
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -57,6 +66,8 @@ const HomePage = () => {
       </Swiper>
       <ChooseUs />
       <CatagorySection></CatagorySection>
+      <ThemeSection></ThemeSection>
+      <ProductList/>
     </>
   );
 };
@@ -65,7 +76,7 @@ export default HomePage;
 
 function ChooseUs() {
   return (
-    <section className="why-choose-us-section w-full p-20 flex flex-col gap-8 justify-center items-center ">
+    <section className="why-choose-us-section w-full xl:p-20 sm:py-12 sm:px-12 p-5 flex flex-col gap-8 justify-center items-center ">
       <h2 className="text-[#121212] text-[2rem]">Why Choose Us ?</h2>
       <div className="points-main w-full flex sm:justify-between justify-center flex-wrap">
         <div className="QUALITY points-cards flex flex-col items-center justify-center p-[0.75rem] gap-3">
@@ -149,13 +160,21 @@ function CatagorySection() {
       </div>
       <div className="catagory-main flex flex-col sm:flex-row gap-4 items-center">
         <div className="category-box w-auto h-auto relative ">
-          <img src={menCatagory} className="w-full h-full object-contain" alt="" />
+          <img
+            src={menCatagory}
+            className="w-full h-full object-contain"
+            alt=""
+          />
           <div className="category-hover flex justify-center absolute w-full  bottom-0 left-0 p-4   ">
             <h2 className="text-[1.25rem] text-[#fff]">Mens Fashion</h2>
           </div>
         </div>
         <div className="category-box w-auto h-auto relative">
-          <img src={womenCatagory} className="w-full h-full object-contain" alt="" />
+          <img
+            src={womenCatagory}
+            className="w-full h-full object-contain"
+            alt=""
+          />
           <div className="category-hover flex justify-center absolute w-full  bottom-0 left-0 p-4   ">
             <h2 className="text-[1.25rem] text-[#fff]">Mens Fashion</h2>
           </div>
@@ -164,3 +183,81 @@ function CatagorySection() {
     </section>
   );
 }
+
+function ThemeSection() {
+  return (
+    <section className="theme-section w-full xl:px-12 sm:px-8 p-5">
+      <div className="main-theme flex flex-col items-center justify-center">
+        <h2 className="text-[#363636] xl:text-[2.5rem] sm:text-[1.5rem] my-3">
+          FEATURED THEMES
+        </h2>
+        <div className="theme-carosol w-full">
+          <Swiper
+           modules={[Navigation, Autoplay]}
+            slidesPerView={1}
+            spaceBetween={10}
+            loop={true}
+            Autoplay
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              320:{
+                slidesPerView: 2,
+                spaceBetween:10,
+              },
+              420:{
+                slidesPerView: 3,
+                spaceBetween:10,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 7,
+                spaceBetween: 50,
+              },
+            }}
+            className=""
+          >
+            <SwiperSlide>
+              <img src={anime} alt="" className="w-full h-full object-cover" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={cartoon} alt="" className="w-full h-full object-cover" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={glow} alt="" className="w-full h-full object-cover" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={geek} alt="" className="w-full h-full object-cover" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slogan} alt="" className="w-full h-full object-cover" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={superHero} alt="" className="w-full h-full object-cover" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={funkey} alt="" className="w-full h-full object-cover" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={funny} alt="" className="w-full h-full object-cover" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+

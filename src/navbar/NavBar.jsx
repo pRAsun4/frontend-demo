@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../navbar/NavBar-style.css";
 import { Link } from "react-router-dom";
+import TsoulLogo from '../image/t-soul-logo.svg'
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -19,9 +20,10 @@ export default function NavBar() {
           <div className="logo-btn-box flex justify-center items-center">
             <Link
               to="/"
-              className="name-box px-[29px] py-[3px] bg-[#d4161e] h-auto items-center justify-center lg:flex hidden"
             >
-              <h1 className="text-[1rem] sm:text-[2rem]">T-SOUL</h1>
+              <div className="name-box w-32 h-auto items-center justify-center lg:flex hidden">
+                  <img src={TsoulLogo} alt="" className="w-full h-full" />
+              </div>
             </Link>
             <button
               className="flex justify-center items-center  lg:hidden h-[2rem] w-[2rem] sm:h-auto sm:w-auto"
