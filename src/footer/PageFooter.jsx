@@ -53,9 +53,14 @@ export default function PageFooter() {
                       Privacy Policy
                     </a>
                   </li>
-                  <li>
+                  <li className="mb-4">
                     <a href="#" className="hover:underline">
                       Terms &amp; Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:underline">
+                      Return Policy
                     </a>
                   </li>
                 </ul>

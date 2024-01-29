@@ -1,0 +1,17 @@
+.border1{
+    border: 1px solid red;
+}
+.grid-content .product-title {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06rem;
+  color: rgb(18, 18, 18);
+}
+.grid-content .product-price {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.13rem;
+  color: rgb(18, 18, 18);
+}

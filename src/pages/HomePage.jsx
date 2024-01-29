@@ -6,26 +6,26 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import menCatagory from "../image/men-catagory.png";
 import womenCatagory from "../image/man-cat.png";
-import anime from '../image/anime.png'
-import cartoon from '../image/cartoon.png'
-import funkey from '../image/funkey.png'
-import funny from '../image/funny.png'
-import geek from '../image/geek.png'
-import glow from '../image/glow.png'
-import slogan from '../image/slogan.png'
-import superHero from '../image/super-hero.png'
+import anime from "../image/anime.png";
+import cartoon from "../image/cartoon.png";
+import funkey from "../image/funkey.png";
+import funny from "../image/funny.png";
+import geek from "../image/geek.png";
+import glow from "../image/glow.png";
+import slogan from "../image/slogan.png";
+import superHero from "../image/super-hero.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import { Link } from "react-router-dom";
 import "./CSS/chooseUs.css";
 // Import Swiper styles
 import "swiper/css";
 import ProductList from "../product-list/ProductList";
 
 const HomePage = () => {
-  return ( 
+  return (
     <>
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -67,7 +67,7 @@ const HomePage = () => {
       <ChooseUs />
       <CatagorySection></CatagorySection>
       <ThemeSection></ThemeSection>
-      <ProductList/>
+      <ProductList />
     </>
   );
 };
@@ -166,7 +166,7 @@ function CatagorySection() {
             alt=""
           />
           <div className="category-hover flex justify-center absolute w-full  bottom-0 left-0 p-4   ">
-            <h2 className="text-[1.25rem] text-[#fff]">Mens Fashion</h2>
+            <h2 className="text-[1.25rem] text-[#fff]">MEN</h2>
           </div>
         </div>
         <div className="category-box w-auto h-auto relative">
@@ -176,7 +176,7 @@ function CatagorySection() {
             alt=""
           />
           <div className="category-hover flex justify-center absolute w-full  bottom-0 left-0 p-4   ">
-            <h2 className="text-[1.25rem] text-[#fff]">Mens Fashion</h2>
+            <h2 className="text-[1.25rem] text-[#fff]">WOMEN</h2>
           </div>
         </div>
       </div>
@@ -188,12 +188,12 @@ function ThemeSection() {
   return (
     <section className="theme-section w-full xl:px-12 sm:px-8 p-5">
       <div className="main-theme flex flex-col items-center justify-center">
-        <h2 className="text-[#363636] xl:text-[2.5rem] sm:text-[1.5rem] my-3">
+        <h2 className="text-[#363636] xl:text-[2.5rem] sm:text-[1.5rem] my-8">
           FEATURED THEMES
         </h2>
         <div className="theme-carosol w-full">
           <Swiper
-           modules={[Navigation, Autoplay]}
+            modules={[Navigation, Autoplay]}
             slidesPerView={1}
             spaceBetween={10}
             loop={true}
@@ -206,13 +206,13 @@ function ThemeSection() {
               clickable: true,
             }}
             breakpoints={{
-              320:{
+              320: {
                 slidesPerView: 2,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
-              420:{
+              420: {
                 slidesPerView: 3,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
               640: {
                 slidesPerView: 3,
@@ -230,28 +230,76 @@ function ThemeSection() {
             className=""
           >
             <SwiperSlide>
-              <img src={anime} alt="" className="w-full h-full object-cover" />
+              <Link to="#">
+                <img
+                  src={anime}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+                <p className="text-center">Anime</p>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={cartoon} alt="" className="w-full h-full object-cover" />
+              <Link to="#">
+                <img
+                  src={cartoon}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+                <p className="text-center">Cartoon</p>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={glow} alt="" className="w-full h-full object-cover" />
+              <Link to="#">
+                <img src={glow} alt="" className="w-full h-full object-cover" />
+                <p className="text-center">Glow in dark</p>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={geek} alt="" className="w-full h-full object-cover" />
+              <Link to="#">
+                <img src={geek} alt="" className="w-full h-full object-cover" />
+                <p className="text-center">Geeks</p>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slogan} alt="" className="w-full h-full object-cover" />
+              <Link to="#">
+                <img
+                  src={slogan}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+                <p className="text-center">Slogan</p>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={superHero} alt="" className="w-full h-full object-cover" />
+              <Link to="#">
+                <img
+                  src={superHero}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+                <p className="text-center">Super Hero</p>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={funkey} alt="" className="w-full h-full object-cover" />
+              <Link to="#">
+                <img
+                  src={funkey}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+                <p className="text-center">Funkey</p>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={funny} alt="" className="w-full h-full object-cover" />
+              <Link to="#">
+                <img
+                  src={funny}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+                <p className="text-center">Funny</p>
+              </Link>
             </SwiperSlide>
           </Swiper>
         </div>
@@ -259,5 +307,3 @@ function ThemeSection() {
     </section>
   );
 }
-
-
