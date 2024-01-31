@@ -1,5 +1,4 @@
-import Men from "../image/men-catagory.png";
-import { Navigation, Autoplay } from "swiper/modules";
+import {  Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,14 +10,14 @@ import { useParams } from "react-router-dom";
 export default function ProductDetails() {
   const [value, setValue] = useState(1);
   const { id } = useParams();
-  const [products, setProducts] = useState([]);
+  const [details, setDetails] = useState([]);
 
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
         const response = await fetch(`https://dummyjson.com/products/${id}`);
         const data = await response.json();
-        setProducts(data);
+        setDetails(data);
         console.log(data);
       } catch (error) {
         console.error("Error fetching product details:", error);
@@ -38,9 +37,8 @@ export default function ProductDetails() {
     <>
       <section className="product-details w-full h-auto ">
         <div className="details-main w-full px-5 sm:px-8 xl:px-16 py-4">
-          {products && products.map((product) => (
-            <div
-              key={product.id}
+        <div
+              
               className="details-grid grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-4 w-full"
             >
               <div className="grid-slider">
@@ -66,17 +64,17 @@ export default function ProductDetails() {
                     },
                   }}
                 >
-                  {product.images.map((index, image) => (
-                    <SwiperSlide key={index}>
-                      <img src={image} alt="" className="w-full h-full" />
+                  {details.images && details.images.map((image, index) => (
+                    <SwiperSlide key={index} className="aspect-square">
+                      <img src={image} alt="" className="w-full h-full aspect-square" />
                     </SwiperSlide>
                   ))}
                 </Swiper>
               </div>
               <div className="grid-content flex flex-col lg:items-start items-center gap-4">
-                <h2 className="product-title text-[4rem]">Tee Shirt</h2>
+                <h2 className="product-title text-[4rem]">{details.title}</h2>
                 <h4 className="product-price lg:text-[1.8rem] text-[1.6rem]">
-                  $100
+                 $ {details.price}
                 </h4>
                 <div className="quantity-box flex flex-col lg:w-[9rem] ">
                   <p className="quantity mb-2 text-[1.3rem]">Quantity</p>
@@ -116,7 +114,6 @@ export default function ProductDetails() {
                 </div>
               </div>
             </div>
-          ))}
         </div>
       </section>
     </>

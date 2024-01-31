@@ -42,3 +42,8 @@
     opacity: 0;
   }
 }
+
+.product-img img{
+  aspect-ratio: 1 / 1;
+}
+
