@@ -1,19 +1,19 @@
-import dropCutImg from "../image/dropcut.png";
-import fullSleev from "../image/full-sleev.png";
-import narutoImg from "../image/naruto.png";
-import womenTshirt from "../image/women.png";
+import dropCutImg from "../featured/image/dropcut.png";
+import fullSleev from "../featured/image/full-sleev.png";
+import narutoImg from "../featured/image/naruto.png";
+import womenTshirt from "../featured/image/women.png";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import menCatagory from "../image/men-catagory.png";
-import womenCatagory from "../image/man-cat.png";
-import anime from "../image/anime.png";
-import cartoon from "../image/cartoon.png";
-import funkey from "../image/funkey.png";
-import funny from "../image/funny.png";
-import geek from "../image/geek.png";
-import glow from "../image/glow.png";
-import slogan from "../image/slogan.png";
-import superHero from "../image/super-hero.png";
+import menCatagory from "../featured/image/men-catagory.png";
+import womenCatagory from "../featured/image/man-cat.png";
+import anime from "../featured/image/anime.png";
+import cartoon from "../featured/image/cartoon.png";
+import funkey from "../featured/image/funkey.png";
+import funny from "../featured/image/funny.png";
+import geek from "../featured/image/geek.png";
+import glow from "../featured/image/glow.png";
+import slogan from "../featured/image/slogan.png";
+import superHero from "../featured/image/super-hero.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,7 +22,7 @@ import { Link } from "react-router-dom";
 import "./CSS/chooseUs.css";
 // Import Swiper styles
 import "swiper/css";
-import ProductList from "../product-list/ProductList";
+import ProductList from "../featured/product-list/ProductList";
 
 const HomePage = () => {
   return (

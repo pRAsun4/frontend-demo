@@ -5,5 +5,14 @@ footer {
     rgba(4, 11, 83, 1) 0%,
     rgba(60, 7, 69, 1) 0%
   );
+  /* background: #808080; */
 }
-
+footer a{
+  color: #AFAFAF;
+}
+footer a p{
+  font-size: 1rem;
+}
+footer .social-handles a{
+  border: 1px solid #808080;
+}

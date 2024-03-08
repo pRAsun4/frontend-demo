@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import LoginPage from "./pages/LoginPage";
@@ -6,8 +6,7 @@ import SignUpPage from "./pages/SignUpPage";
 import HomePage from "./pages/HomePage";
 import ContactUsPage from "./pages/ContactUsPage";
 import CartPage from "./pages/CartPage";
-import ProductDetails from "./product-list/ProductDetails";
-import ProductList from "./product-list/ProductList";
+import ProductDetails from "./featured/product-list/ProductDetails";
 function App() {
   return (
     <>

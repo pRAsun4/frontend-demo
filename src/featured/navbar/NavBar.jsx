@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../navbar/NavBar-style.css";
 import { Link } from "react-router-dom";
-import TsoulLogo from '../image/t-soul-logo.svg'
+import TsoulLogo from "../../featured/image/t-soul-logo.svg";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -18,11 +18,9 @@ export default function NavBar() {
       <nav className="w-full h-auto border">
         <div className="w-full flex justify-between md:px-[2rem] px-[10px] py-[10px] relative">
           <div className="logo-btn-box flex justify-center items-center">
-            <Link
-              to="/"
-            >
+            <Link to="/">
               <div className="name-box w-32 h-auto items-center justify-center lg:flex hidden">
-                  <img src={TsoulLogo} alt="" className="w-full h-full" />
+                <img src={TsoulLogo} alt="" className="w-full h-full" />
               </div>
             </Link>
             <button
@@ -49,7 +47,7 @@ export default function NavBar() {
           </div>
           <div className="header-box lg:hidden flex justify-center items-center">
             <Link to="/">
-              <h1 className="text-[1.5rem] sm:text-[2rem]">T-SOUL</h1>
+              <img src={TsoulLogo} alt="" className="max-h-[2.5rem]" />
             </Link>
           </div>
           <div className="icon-box flex items-center justify-center gap-4 lg:hidden">
@@ -116,36 +114,68 @@ export default function NavBar() {
               </button>
             </Link>
           </div>
-          <div className="gender-div justify-between hidden lg:flex">
-            <a href="#" className=" px-4 py-3">
-              MAN
-            </a>
-            <a href="#" className=" px-4 py-3">
-              WOMEN
-            </a>
-          </div>
-          <div className="justify-between hidden lg:flex gap-4">
-            <button className="flex justify-center items-center  w-auto h-auto sm:h-auto sm:w-auto">
+          <div className="category-div gap-[2.6rem] hidden lg:flex">
+            <a href="#" className="flex items-center px-4 py-3 relative">
+              <h6 className="sm:text-[1.4269rem] text-[1rem] text-[#000000]">
+                Man
+              </h6>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                className="absolute top-[1.875rem] right-0"
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M21 21L15 15M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
+                  d="M1.29102 1.71701C1.098 1.54154 1.22214 1.22046 1.48299 1.22046H10.4707C10.7315 1.22046 10.8557 1.54154 10.6626 1.71701L6.1688 5.80232C6.05995 5.90128 5.89371 5.90128 5.78486 5.80232L1.29102 1.71701Z"
+                  fill="black"
                   stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeWidth="0.951276"
+                />
+              </svg>
+            </a>
+            <a href="#" className="flex items-center px-4 py-3 relative">
+              <h6 className="sm:text-[1.4269rem] text-[1rem] text-[#000000]">
+                Women
+              </h6>
+              <svg
+                className="absolute top-[1.875rem] right-0"
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.29102 1.71701C1.098 1.54154 1.22214 1.22046 1.48299 1.22046H10.4707C10.7315 1.22046 10.8557 1.54154 10.6626 1.71701L6.1688 5.80232C6.05995 5.90128 5.89371 5.90128 5.78486 5.80232L1.29102 1.71701Z"
+                  fill="black"
+                  stroke="black"
+                  strokeWidth="0.951276"
+                />
+              </svg>
+            </a>
+          </div>
+          <div className="search items-center gap-[1.5rem] hidden lg:flex ">
+            <button className="flex justify-center items-center  md:w-[40px] md:h-[40px] rounded-full button">
+              <svg
+                className="w-[1.5rem]  "
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5493 18.1006C22.2438 15.7881 23.0027 12.9209 22.6743 10.0728C22.3458 7.22467 20.9543 4.60558 18.778 2.73952C16.6016 0.87346 13.8011 -0.101946 10.9366 0.00844302C8.07213 0.118832 5.35494 1.30688 3.32867 3.33489C1.30239 5.3629 0.116455 8.08133 0.00813113 10.9463C-0.100193 13.8113 0.877079 16.6115 2.74443 18.7868C4.61178 20.962 7.2315 22.3519 10.0795 22.6784C12.9274 23.0048 15.7936 22.2437 18.1046 20.5474H18.1029C18.1554 20.6174 18.2114 20.6839 18.2744 20.7486L25.0116 27.4868C25.3398 27.8152 25.7849 27.9998 26.2491 28C26.7133 28.0002 27.1586 27.8159 27.4869 27.4877C27.8153 27.1595 27.9998 26.7144 28 26.2501C28.0002 25.7858 27.8159 25.3405 27.4878 25.0121L20.7505 18.2739C20.688 18.2106 20.6207 18.152 20.5493 18.0989V18.1006ZM21.0008 11.3729C21.0008 12.637 20.7518 13.8888 20.2682 15.0566C19.7845 16.2245 19.0755 17.2857 18.1818 18.1795C17.2881 19.0734 16.227 19.7824 15.0593 20.2662C13.8916 20.7499 12.6401 20.9989 11.3761 20.9989C10.1122 20.9989 8.86067 20.7499 7.69295 20.2662C6.52524 19.7824 5.46423 19.0734 4.5705 18.1795C3.67677 17.2857 2.96782 16.2245 2.48414 15.0566C2.00045 13.8888 1.75151 12.637 1.75151 11.3729C1.75151 8.81996 2.76553 6.37155 4.5705 4.56633C6.37547 2.7611 8.82353 1.74694 11.3761 1.74694C13.9288 1.74694 16.3768 2.7611 18.1818 4.56633C19.9868 6.37155 21.0008 8.81996 21.0008 11.3729V11.3729Z"
+                  fill="black"
                 />
               </svg>
             </button>
             <Link to="/login" className="flex">
-              <button className="flex justify-center items-center  w-auto h-auto sm:h-auto sm:w-auto relative">
+              <button className="flex justify-center items-center  md:w-[40px] md:h-[40px] rounded-full button relative">
                 <svg
-                  className="h-4 w-8"
+                  className="w-[1.5rem] h-[1.3rem] "
                   xmlns="http://www.w3.org/2000/svg"
                   width="12"
                   height="12"
@@ -164,11 +194,11 @@ export default function NavBar() {
               </button>
             </Link>
             <Link to="/cart-page" className="flex">
-              <button className="flex justify-center items-center  w-auto h-auto sm:h-auto sm:w-auto relative">
-                <span className="absolute top-[-13px] sm:top-0 right-[-8px] inline-flex items-center rounded-md bg-gray-50 px-[3px] py-[3px] text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
-                  03
-                </span>
-                <svg
+              <button className="flex  items-center px-[10px] py-[5px] max-w-[11.25rem] w-[7rem] rounded-full button gap-[.4rem] ">
+                <p className="cart-text text-[1.4rem]">Cart -</p>
+                <p className="cart-text text-[1.4rem]">0</p>
+
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -182,7 +212,7 @@ export default function NavBar() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                </svg>
+                </svg> */}
               </button>
             </Link>
           </div>

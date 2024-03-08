@@ -1,66 +1,126 @@
 import "../footer/FooterStyle.css";
+import Logo from "../image/t-soul-logo.svg";
+import { Link } from "react-router-dom";
 
 export default function PageFooter() {
   return (
     <>
-      <footer className="">
+      <footer>
         {/* bg-white dark:bg-gray-900 */}
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center">
-                <img
-                  src="https://flowbite.com/docs/images/logo.svg"
-                  className="h-8 me-3"
-                  alt="FlowBite Logo"
-                />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#fff] dark:text-white">
-                  T-SOUL
-                </span>
+              <a href="#" className="flex items-center">
+                <img src={Logo} className="h-12 me-3" alt="Tsoul Logo" />
               </a>
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:gap-4 sm:grid-cols-2">
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                  About us
+            <div className="grid grid-cols-3 gap-0 sm:gap-4 md:grid-cols-4 sm:grid-cols-3">
+              <div className="service">
+                <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
+                  Service
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a
-                      href="https://github.com/pRAsun4/frontend-demo-t-soul"
-                      className="hover:underline "
-                    >
-                      Github
+                    <Link to="#" className="hover:underline">
+                      <p>Contact</p>
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link to="#" className="hover:underline">
+                      <p>Shiping</p>
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link to="#" className="hover:underline">
+                      <p>Return</p>
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link to="#" className="hover:underline">
+                      <p>Size guide</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#" className="hover:underline">
+                      <p>Help center</p>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="company">
+                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+                  Company
+                </h2>
+                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <li className="mb-4">
+                    <a href="#" className="hover:underline">
+                      <p>About</p>
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="#" className="hover:underline">
+                      <p>Product</p>
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="#" className="hover:underline">
+                      <p>Image bank</p>
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://discord.gg/4eeurUVvTy"
-                      className="hover:underline"
-                    >
-                      Discord
+                    <a href="#" className="hover:underline">
+                      <p>Career</p>
                     </a>
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="terms">
                 <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                  Legal
+                  Terms
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
-                      Privacy Policy
+                      <p>Privacy Policy</p>
                     </a>
                   </li>
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
-                      Terms &amp; Conditions
+                      <p>Terms &amp; Conditions</p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:underline">
-                      Return Policy
+                      <p>Return Policy</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="social-handles">
+                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <br />
+                  <li className="mb-4 w-fit sm:w-[10rem] md:max-w-[8rem] max-w-[12rem]">
+                    <a
+                      href="https://www.instagram.com/"
+                      className="flex justify-center px-4 py-2 sm:px-[2rem] sm:py-[10px] w-full rounded-full "
+                    >
+                      INSTAGRAM
+                    </a>
+                  </li>
+                  <li className="mb-4 w-fit sm:w-[10rem] md:max-w-[8rem] max-w-[12rem]">
+                    <a
+                      href="https://www.facebook.com/"
+                      className="flex justify-center px-4 py-2 sm:px-[2rem] sm:py-[10px] w-full rounded-full "
+                    >
+                      FACEBOOK
+                    </a>
+                  </li>
+                  <li className="w-fit sm:w-[10rem] md:max-w-[8rem] max-w-[12rem]">
+                    <a
+                      href="https://www.linkedin.com/"
+                      className="flex justify-center px-4 py-2 sm:px-[2rem] sm:py-[10px] w-full  rounded-full "
+                    >
+                      LINKEDLN
                     </a>
                   </li>
                 </ul>

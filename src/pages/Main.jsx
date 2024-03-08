@@ -1,5 +1,5 @@
-import NavBar from "../navbar/NavBar";
-import PageFooter from "../footer/PageFooter";
+import NavBar from "../featured/navbar/NavBar";
+import PageFooter from "../featured/footer/PageFooter";
 import { Outlet } from "react-router-dom";
 
 export default function Main() {

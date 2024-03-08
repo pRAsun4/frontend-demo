@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import PageFooter from "../footer/PageFooter";
 
 export default function SignUpPage() {
   return (
