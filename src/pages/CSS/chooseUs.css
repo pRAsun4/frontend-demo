@@ -62,3 +62,9 @@
   line-height: 1.125;
   font-style: normal;
 }
+.landing-hero-banner{
+  /* background: url('../../featured/image/bg-img.png'); */
+  background-position: right 3rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

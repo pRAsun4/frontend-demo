@@ -9,9 +9,9 @@
 h1,
 h2 {
   font-family: "Raleway", sans-serif;
-  /* font-optical-sizing: auto; */
-  font-weight: 700;
-  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 137.5%;
+  letter-spacing: 0%;
 }
 h6 {
   font-family: "Commissioner", sans-serif;
@@ -22,8 +22,10 @@ h6 {
 }
 p {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 2.25rem;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .viedeo-text {
   font-family: "Syne", sans-serif;
@@ -37,7 +39,7 @@ p {
   font-weight: 500;
   font-style: normal;
 }
-.button{
+.button {
   border: 1px solid #000;
 }
 .logo {

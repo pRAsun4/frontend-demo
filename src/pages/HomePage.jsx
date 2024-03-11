@@ -14,6 +14,8 @@ import geek from "../featured/image/geek.png";
 import glow from "../featured/image/glow.png";
 import slogan from "../featured/image/slogan.png";
 import superHero from "../featured/image/super-hero.png";
+import heroBg from "../featured/image/bg-img.png";
+import "./CSS/chooseUs.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -31,14 +33,10 @@ const HomePage = () => {
         modules={[Navigation, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
         Autoplay
         loop={true}
+        autoplay={{ delay: 3000 }}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -52,17 +50,81 @@ const HomePage = () => {
         }}
       >
         <SwiperSlide>
-          <img src={dropCutImg} className="w-full h-[20dvh] sm:h-auto" />
+          <div className="landing-hero-banner relative h-full min-h-[30rem] flex items-center xl:ps-[5.38rem] sm:ps-[3rem] ps-[1.5rem] xl:py-[5rem]  md:py-[3rem] py-[2rem] bg-[#ededed]">
+            <div className="flex flex-col gap-[3rem] z-20 sm:z-0 ">
+              <div className="flex flex-col md:gap-5 items-start">
+                <h2 className="xl:text-[5rem] md:text-[3rem] text-[2rem] text-[#000000] xl:max-w-[34rem] sm:max-w-[20rem] max-w-[15rem] ">
+                  YOUR TITLE IS HERE
+                </h2>
+                <p className="sm:text-[1.25rem] text-[0.875rem] text-[#636363] xl:max-w-[33rem] sm:max-w-[17rem] max-w-[14rem] ">
+                  Subtitle, you can describe your product here
+                </p>
+              </div>
+              <div className="flex w-full justify-between ">
+                <Link to="#" className="flex items-center sm:px-[2rem] px-[1rem] sm:py-[1rem] py-[0.5rem] text-[#C6866B] max-w-[13.5rem] rounded-full border border-solid  border-[#c6866b]">
+                  <p className="text-[1.25rem] me-5 ">Shop Now</p>
+                  <svg
+                    width="17.500000"
+                    height="17.500000"
+                    viewBox="0 0 17.5 17.5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
+                      fill="#C6866B"
+                      fillOpacity="1.000000"
+                      fillRule="nonzero"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            <img src={heroBg} className=" z-0 sm:z-10 opacity-50 sm:opacity-100 absolute w-full xl:max-w-[28rem] sm:max-w-[24rem] max-w-[20rem] xl:h-[30rem] sm:h-[26rem] h-full bottom-0 xl:right-[10rem] right-0 bg-no-repeat bg-cover " ></img>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={fullSleev} className="w-full h-[20dvh] sm:h-auto" />
+          <div className="landing-hero-banner relative h-full min-h-[30rem] flex items-center xl:ps-[5.38rem] sm:ps-[3rem] ps-[1.5rem] xl:py-[5rem]  md:py-[3rem] py-[2rem] bg-[#ededed]">
+            <div className="flex flex-col gap-[3rem] z-20 sm:z-0 ">
+              <div className="flex flex-col md:gap-5 items-start">
+                <h2 className="xl:text-[5rem] md:text-[3rem] text-[2rem] text-[#000000] xl:max-w-[34rem] sm:max-w-[20rem] max-w-[15rem] ">
+                  YOUR TITLE IS HERE
+                </h2>
+                <p className="sm:text-[1.25rem] text-[0.875rem] text-[#636363] xl:max-w-[33rem] sm:max-w-[17rem] max-w-[14rem] ">
+                  Subtitle, you can describe your product here
+                </p>
+              </div>
+              <div className="flex w-full justify-between ">
+                <Link to="#" className="flex items-center sm:px-[2rem] px-[1rem] sm:py-[1rem] py-[0.5rem] text-[#C6866B] max-w-[13.5rem] rounded-full border border-solid  border-[#c6866b]">
+                  <p className="text-[1.25rem] me-5 ">Shop Now</p>
+                  <svg
+                    width="17.500000"
+                    height="17.500000"
+                    viewBox="0 0 17.5 17.5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
+                      fill="#C6866B"
+                      fillOpacity="1.000000"
+                      fillRule="nonzero"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            <img src={heroBg} className=" z-0 sm:z-10 opacity-50 sm:opacity-100 absolute w-full xl:max-w-[28rem] sm:max-w-[24rem] max-w-[20rem] xl:h-[30rem] sm:h-[26rem] h-full bottom-0 xl:right-[10rem] right-0 bg-no-repeat bg-cover " ></img>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={narutoImg} className="w-full h-[20dvh] sm:h-auto" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={womenTshirt} className="w-full h-[20dvh] sm:h-auto" />
-        </SwiperSlide>
+        
+        
       </Swiper>
       <ChooseUs />
       <CatagorySection></CatagorySection>
