@@ -33,9 +33,9 @@ const HomePage = () => {
         modules={[Navigation, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
-        Autoplay
-        loop={true}
-        autoplay={{ delay: 3000 }}
+        // Autoplay
+        // loop={true}
+        // autoplay={{ delay: 3000 }}
         centeredSlides={true}
         breakpoints={{
           640: {
@@ -61,28 +61,47 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="flex w-full justify-between ">
-                <Link
-                  to="#"
-                  className="flex items-center sm:px-[2rem] px-[1rem] sm:py-[1rem] py-[0.5rem] text-[#C6866B] max-w-[13.5rem] rounded-full border border-solid  border-[#c6866b]"
-                >
-                  <p className="text-[1.25rem] me-5 ">Shop Now</p>
-                  <svg
-                    width="17.500000"
-                    height="17.500000"
-                    viewBox="0 0 17.5 17.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <desc>Created with Pixso.</desc>
-                    <defs />
-                    <path
-                      id="Vector"
-                      d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
-                      fill="#C6866B"
-                      fillOpacity="1.000000"
-                      fillRule="nonzero"
-                    />
-                  </svg>
+                <Link to="#" className="button_primary">
+                  <div className="button-inner">
+                    <span>
+                      <p className="text-[1.25rem] me-5 ">Shop Now</p>
+                      <svg
+                        width="17.500000"
+                        height="17.500000"
+                        viewBox="0 0 17.5 17.5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <defs />
+                        <path
+                          id="Vector"
+                          d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
+                          fill="#C6866B"
+                          fillOpacity="1.000000"
+                          fillRule="nonzero"
+                        />
+                      </svg>
+                    </span>
+                    <span>
+                      <p className="text-[1.25rem] me-5 ">Shop Now</p>
+                      <svg
+                        width="17.500000"
+                        height="17.500000"
+                        viewBox="0 0 17.5 17.5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <defs />
+                        <path
+                          id="Vector"
+                          d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
+                          fill="#C6866B"
+                          fillOpacity="1.000000"
+                          fillRule="nonzero"
+                        />
+                      </svg>
+                    </span>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -151,16 +170,16 @@ function SelectCategory() {
     <>
       <section className="category-section px-[1.25rem] xl:px-20 md:px-12 sm:px-8 py-4 xl:py-10 sm:py-6    ">
         <div className="category-main-div grid grid-cols-3">
-          <div className="flex flex-col items-start gap-6 xl:gap-10 w-auto h-auto category-cards border1">
-            <h5 className="text-[#000] text-[2.5rem] sm:text-[3rem] xl:text-[4rem] ">
+          <div className="flex flex-col items-start gap-6 xl:gap-10 w-auto h-auto category-cards ">
+            <h5 className="text-[#000] text-[2.5rem] sm:text-[3rem] xl:text-[3.5rem] ">
               CATEGORIES
             </h5>
-            <p className="text-[0.875rem] sm:text-[1rem] xl:text-[1.25rem] text-[#000] ">
+            <p className="text-[0.875rem] sm:text-[1rem] xl:text-[1.25rem] text-[#000] max-w-[20rem]">
               Your text that informs customers about this section...
             </p>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper border1">
+            <Link to="#" className="w-full h-[31.25rem] link-wrapper ">
               <img
                 src={MenCategory}
                 alt="men with t-shirt"
@@ -171,14 +190,63 @@ function SelectCategory() {
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper border1">
+            <Link to="#" className="w-full h-[31.25rem] link-wrapper ">
               <img
                 src={WomenCategory}
                 alt="women with t-shirt"
                 className="w-full h-full object-fill"
               />
               {/* THIS SPAN TAG SHOULD BE A SEPARATE COMPONENT WHEN USING API FETCH */}
-              <span className="p text-[#fff] text-[1rem] px-[2rem]  ">Women</span>
+              <span className="p text-[#fff] text-[1rem] px-[2rem]  ">
+                Women
+              </span>
+            </Link>
+          </div>
+          <div className="flex w-auto h-auto items-center justify-center category-cards ">
+            <Link to="#" className="w-full h-[31.25rem] link-wrapper ">
+              <img
+                src={CatSticker}
+                alt="spider logo"
+                className="w-full h-full object-fill"
+              />
+              {/* THIS SPAN TAG SHOULD BE A SEPARATE COMPONENT WHEN USING API FETCH */}
+              <span className="p text-[#fff] text-[1rem] px-[2rem]  ">
+                Sticker
+              </span>
+            </Link>
+          </div>
+          <div className="flex w-auto h-auto items-center justify-center category-cards ">
+            <Link to="#" className="w-full h-[31.25rem] link-wrapper ">
+              <img
+                src={CatCover}
+                alt="mobile cover"
+                className="w-full h-full object-fill"
+              />
+              {/* THIS SPAN TAG SHOULD BE A SEPARATE COMPONENT WHEN USING API FETCH */}
+              <span className="p text-[#fff] text-[1rem] px-[2rem]  ">
+                Cover
+              </span>
+            </Link>
+          </div>
+          <div className="flex w-auto h-auto items-center justify-center category-cards ">
+            <Link to="#" className="w-auto h-auto button_primary ">
+              <p className="text-[1.25rem] me-5 ">Shop Now</p>
+              <svg
+                width="17.500000"
+                height="17.500000"
+                viewBox="0 0 17.5 17.5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  id="Vector"
+                  d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
+                  fill="#C6866B"
+                  fillOpacity="1.000000"
+                  fillRule="nonzero"
+                />
+              </svg>
             </Link>
           </div>
         </div>
