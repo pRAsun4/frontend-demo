@@ -7,7 +7,10 @@
   outline: 1px solid red;
 } */
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 700 !important;
   line-height: 137.5%;
@@ -20,7 +23,8 @@ h6 {
   font-style: normal;
   font-variation-settings: "slnt" 0, "FLAR" 0, "VOLM" 0;
 }
-p {
+p,
+.p {
   font-family: "Poppins", sans-serif;
   font-weight: 500 !important;
   line-height: 2.25rem;
