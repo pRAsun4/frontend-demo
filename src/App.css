@@ -63,10 +63,11 @@ p,
   color: #C6866B;
   border:1px solid #C6866B;
   border-radius: 45px;
-  max-width: 13.5rem;
+  max-width: 15.5rem;
   max-height: 4rem;
   display: flex;
   align-items: center;
+  transition: all .3s ease;
   overflow: hidden;
 }
 .button_primary p{
@@ -80,13 +81,13 @@ p,
 .button_primary .button-inner span, span:first-child{
   display: flex;
   align-items: center;
-  transform: translateY(23px);
+  transform: translateY(60%);
 }
 .button_primary:hover .button-inner span:last-child{
-  transform: translateY(-27px);
+  transform: translateY(-75%);
 }
 .button_primary:hover .button-inner span:first-child{
-  transform: translateY(-30px);
+  transform: translateY(  );
 }
 
 @keyframes logo-spin {

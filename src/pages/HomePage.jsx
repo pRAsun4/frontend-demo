@@ -230,7 +230,7 @@ function SelectCategory() {
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
             <Link to="#" className="w-auto h-auto button_primary ">
-              <p className="text-[1.25rem] me-5 ">Shop Now</p>
+              <p className="text-[1.25rem] me-5 ">All categories</p>
               <svg
                 width="17.500000"
                 height="17.500000"
