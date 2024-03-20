@@ -58,37 +58,40 @@ p,
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-.button_primary{
+.button_primary {
   padding: 1rem 2rem;
-  color: #C6866B;
-  border:1px solid #C6866B;
+  color: #c6866b;
+  border: 1px solid #c6866b;
   border-radius: 45px;
   max-width: 15.5rem;
   max-height: 4rem;
   display: flex;
   align-items: center;
-  transition: all .3s ease;
-  overflow: hidden;
+  transition: all 0.3s ease;
 }
-.button_primary p{
+.button_primary p {
   margin-right: 1.25rem;
 }
-.button_primary .button-inner{
+.button_primary .button-inner {
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
+  overflow: hidden;
+  height: 1.5rem;
   flex-direction: column;
+  transition: all .3s ease;
 }
-.button_primary .button-inner span, span:first-child{
+.button_primary .button-inner span{
   display: flex;
   align-items: center;
-  transform: translateY(60%);
+  width: 100%;
+  transform: translateY(-0.5rem);
+  transition: all .3s ease;
+
 }
-.button_primary:hover .button-inner span:last-child{
-  transform: translateY(-75%);
+.button_primary:hover .button-inner span{
+  transform: translateY(-2.8rem);
 }
-.button_primary:hover .button-inner span:first-child{
-  transform: translateY(  );
-}
+
 
 @keyframes logo-spin {
   from {

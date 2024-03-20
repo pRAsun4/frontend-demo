@@ -168,10 +168,10 @@ export default HomePage;
 function SelectCategory() {
   return (
     <>
-      <section className="category-section px-[1.25rem] xl:px-20 md:px-12 sm:px-8 py-4 xl:py-10 sm:py-6    ">
-        <div className="category-main-div grid grid-cols-3">
+      <section className="category-section px-[1.25rem] xl:px-20 md:px-10 sm:px-8 py-4 xl:py-10 sm:py-6    ">
+        <div className="category-main-div grid xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:gap-y-0 gap-y-4">
           <div className="flex flex-col items-start gap-6 xl:gap-10 w-auto h-auto category-cards ">
-            <h5 className="text-[#000] text-[2.5rem] sm:text-[3rem] xl:text-[3.5rem] ">
+            <h5 className="text-[#000] text-[1.25rem] md:text-[2rem] sm:text-[1.5rem] xl:text-[3.5rem] ">
               CATEGORIES
             </h5>
             <p className="text-[0.875rem] sm:text-[1rem] xl:text-[1.25rem] text-[#000] max-w-[20rem]">
@@ -179,22 +179,22 @@ function SelectCategory() {
             </p>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper ">
+            <Link to="#" className="w-full h-[31.25rem] link-wrapper hover-img">
               <img
                 src={MenCategory}
                 alt="men with t-shirt"
-                className="w-full h-full object-fill"
+                className="w-full h-full object-fill "
               />
               {/* THIS SPAN TAG SHOULD BE A SEPARATE COMPONENT WHEN USING API FETCH */}
               <span className="p text-[#fff] text-[1rem] px-[2rem]  ">Men</span>
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper ">
+            <Link to="#" className="w-full h-[31.25rem] link-wrapper hover-img">
               <img
                 src={WomenCategory}
                 alt="women with t-shirt"
-                className="w-full h-full object-fill"
+                className="w-full h-full object-fill "
               />
               {/* THIS SPAN TAG SHOULD BE A SEPARATE COMPONENT WHEN USING API FETCH */}
               <span className="p text-[#fff] text-[1rem] px-[2rem]  ">
@@ -203,11 +203,11 @@ function SelectCategory() {
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper ">
+            <Link to="#" className="w-full h-[31.25rem] link-wrapper hover-img">
               <img
                 src={CatSticker}
                 alt="spider logo"
-                className="w-full h-full object-fill"
+                className="w-full h-full object-fill "
               />
               {/* THIS SPAN TAG SHOULD BE A SEPARATE COMPONENT WHEN USING API FETCH */}
               <span className="p text-[#fff] text-[1rem] px-[2rem]  ">
@@ -216,11 +216,11 @@ function SelectCategory() {
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper ">
+            <Link to="#" className="w-full h-[31.25rem] link-wrapper hover-img">
               <img
                 src={CatCover}
                 alt="mobile cover"
-                className="w-full h-full object-fill"
+                className="w-full h-full object-fill "
               />
               {/* THIS SPAN TAG SHOULD BE A SEPARATE COMPONENT WHEN USING API FETCH */}
               <span className="p text-[#fff] text-[1rem] px-[2rem]  ">
@@ -229,24 +229,47 @@ function SelectCategory() {
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-auto h-auto button_primary ">
-              <p className="text-[1.25rem] me-5 ">All categories</p>
-              <svg
-                width="17.500000"
-                height="17.500000"
-                viewBox="0 0 17.5 17.5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs />
-                <path
-                  id="Vector"
-                  d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
-                  fill="#C6866B"
-                  fillOpacity="1.000000"
-                  fillRule="nonzero"
-                />
-              </svg>
+            <Link to="#" className="w-auto h-auto button_primary mt-6 sm:mt-0 ">
+              <div className="button-inner">
+                <span>
+                  <p className="text-[1.25rem] me-5 ">All categories</p>
+                  <svg
+                    width="17.500000"
+                    height="17.500000"
+                    viewBox="0 0 17.5 17.5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
+                      fill="#C6866B"
+                      fillOpacity="1.000000"
+                      fillRule="nonzero"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  <p className="text-[1.25rem] me-5 ">All categories</p>
+                  <svg
+                    width="17.500000"
+                    height="17.500000"
+                    viewBox="0 0 17.5 17.5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M3.5 0L3.5 1.75L14.5162 1.75L0 16.2664L1.23376 17.5L15.75 2.98364L15.75 14L17.5 14L17.5 0L3.5 0Z"
+                      fill="#C6866B"
+                      fillOpacity="1.000000"
+                      fillRule="nonzero"
+                    />
+                  </svg>
+                </span>
+              </div>
             </Link>
           </div>
         </div>
