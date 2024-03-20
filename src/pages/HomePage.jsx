@@ -179,7 +179,7 @@ function SelectCategory() {
             </p>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper hover-img">
+            <Link to="https://dummyjson.com/products/category/mens-shirts" className="w-full h-[31.25rem] link-wrapper hover-img">
               <img
                 src={MenCategory}
                 alt="men with t-shirt"
@@ -190,7 +190,7 @@ function SelectCategory() {
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper hover-img">
+            <Link to="https://dummyjson.com/products/category/womens-dresses" className="w-full h-[31.25rem] link-wrapper hover-img">
               <img
                 src={WomenCategory}
                 alt="women with t-shirt"
@@ -203,7 +203,7 @@ function SelectCategory() {
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper hover-img">
+            <Link to="https://dummyjson.com/products/category/sunglasses" className="w-full h-[31.25rem] link-wrapper hover-img">
               <img
                 src={CatSticker}
                 alt="spider logo"
@@ -216,7 +216,7 @@ function SelectCategory() {
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-full h-[31.25rem] link-wrapper hover-img">
+            <Link to="https://dummyjson.com/products/category/automotive" className="w-full h-[31.25rem] link-wrapper hover-img">
               <img
                 src={CatCover}
                 alt="mobile cover"
@@ -229,7 +229,7 @@ function SelectCategory() {
             </Link>
           </div>
           <div className="flex w-auto h-auto items-center justify-center category-cards ">
-            <Link to="#" className="w-auto h-auto button_primary mt-6 sm:mt-0 ">
+            <Link to="https://dummyjson.com/products/categories" className="w-auto h-auto button_primary mt-6 sm:mt-0 ">
               <div className="button-inner">
                 <span>
                   <p className="text-[1.25rem] me-5 ">All categories</p>
