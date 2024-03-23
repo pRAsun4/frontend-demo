@@ -42,8 +42,11 @@
     opacity: 0;
   }
 }
-
-.product-img img{
-  aspect-ratio: 1 / 1;
+.grid-slider img{
+  height: 30rem !important;
 }
+
+/* .product-img img{
+  aspect-ratio: 1 / 1;
+} */
 
